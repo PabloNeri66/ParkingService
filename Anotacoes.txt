@@ -1,0 +1,78 @@
+# py_live #039
+
+# **Sistema e API de Estacionamento com Python e Django do Zero (parte 1)**
+
+### Requisitos do projeto **Parking Service**:
+
+Sistema de gestão de estacionamento de veículos que deve atender os seguintes requisitos:
+
+https://whimsical.com/parking-service-SSoifu29a1MVLAmLAPMk2a
+
+### Funcionais
+
+- Sistema de administração interno
+    - Controle de usuários, acessos e permissões
+    - Cadastros:
+        - Clientes
+        - Veículos
+        - Vagas
+        - Entradas e saídas de veículos
+    - Status de vagas automático (ocupado / livre)
+- API para futuras integrações
+    - Cadastros completos das entidades
+        - Clientes
+        - Veículos
+        - Vagas
+        - Entradas e saídas de veículos
+    - Autenticação
+    - Filtros
+    - Possibilidade de acesso dos clientes
+        - Ver apenas seus veículos e registros
+- Auto completar dados dos veículos quando informado apenas a placa
+    - Verificar API de consulta
+    - Rodar em paralelo
+- Notificar proprietário nas entradas e saídas dos veículos
+    - WhatsApp
+        - EvolutionApi
+    - E-mail
+        - SMTP
+
+### Não funcionais
+
+- Dashboard do Jazzmin
+- API Restfull
+- Linter e pep08
+- JWT token para API
+- RQL para filtros
+- Testes
+- Serviços em containers
+- EvolutionApi (serviço e integração)
+- E-mail SMTP (integração e envio)
+- PostgreSQL
+- Celery e RabbitMQ
+    - Rodar tasks de buscas de auto completar dados de veículos
+- Documentação da API (swagger)
+
+### Entregas:
+
+- Modelagem
+- Admin
+- Signals (status de vagas)
+
+
+
+
+
+OBS EM AULA:
+
+--> Na Modelagem de dados para separar os apps corretamente, é importante entender a regra de negócio e as entidades fortes...
+design patterns auxiliam ( DDD - Drive Domain Design )
+
+Análise sobre Entidades Fortes: (Flexibilidade e Escalabilidade)
+
+    Costumer? É fundamental no Sistema ( APP )
+    Vehicle? É fundamental no Sitema (APP)
+    Type Vehicle? É uma entidade Fraca, pode ser conectada ao Vehicle através de uma classe(objeto).
+    Parking Spot? É fundamental no Sitemas (App)
+    Parking Record? É uma Entidade "Derivada", pode ser conectada ao Parking Spot por Classe em models.
+
