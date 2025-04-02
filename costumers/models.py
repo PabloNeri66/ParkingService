@@ -10,5 +10,6 @@ class Costumer(models.Model):
         related_name='costumers',
         verbose_name='Usuário',
     )
-
+    name = models.CharField(max_length=100, verbose_name='Nome ')
+    cpf = models.CharField(max_length=15, )
 

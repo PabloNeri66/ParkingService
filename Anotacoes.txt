@@ -81,3 +81,6 @@ related_name = "" --> O related_name é um parâmetro usado no Django, um framew
     Ele Substitui o "_set" de uma consulta de Um campo de classe. no nosso caso no models do app costumers:
     Costumer.User.costumers.all()
     em vez de costumers_set.all()
+
+
+!dica: Não se valida dados no Banco de dados, é na camada mais próxima do usuário!
