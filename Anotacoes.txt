@@ -63,24 +63,33 @@ https://whimsical.com/parking-service-SSoifu29a1MVLAmLAPMk2a
 
 
 
-OBS EM AULA:
+OBS EM AULA PARTE 1
+    
+    Costumers MODELS:
+        !ORM é uma ferramenta que fornece a criacao de tabelas através de classes, a nível de código, declarando os campos do DataBase. Além disso ele auxilia na query de dados!
 
---> Na Modelagem de dados para separar os apps corretamente, é importante entender a regra de negócio e as entidades fortes...
-design patterns auxiliam ( DDD - Drive Domain Design )
+        --> Na Modelagem de dados para separar os apps corretamente, é importante entender a regra de negócio e as entidades fortes...
+        design patterns auxiliam ( DDD - Drive Domain Design )
 
-Análise sobre Entidades Fortes: (Flexibilidade e Escalabilidade)
+        Análise sobre Entidades Fortes: (Flexibilidade e Escalabilidade)
 
-    Costumer? É fundamental no Sistema ( APP )
-    Vehicle? É fundamental no Sitema (APP)
-    Type Vehicle? É uma entidade Fraca, pode ser conectada ao Vehicle através de uma classe(objeto).
-    Parking Spot? É fundamental no Sitemas (App)
-    Parking Record? É uma Entidade "Derivada", pode ser conectada ao Parking Spot por Classe em models.
-__________________________________________________________________________________________________________________________________________
+            Costumer? É fundamental no Sistema ( APP )
+            Vehicle? É fundamental no Sitema (APP)
+            Type Vehicle? É uma entidade Fraca, pode ser conectada ao Vehicle através de uma classe(objeto).
+            Parking Spot? É fundamental no Sitemas (App)
+            Parking Record? É uma Entidade "Derivada", pode ser conectada ao Parking Spot por Classe em models.
+        __________________________________________________________________________________________________________________________________________
 
-related_name = "" --> O related_name é um parâmetro usado no Django, um framework de desenvolvimento web em Python, para definir um nome alternativo para o relacionamento reverso entre modelos.
-    Ele Substitui o "_set" de uma consulta de Um campo de classe. no nosso caso no models do app costumers:
-    Costumer.User.costumers.all()
-    em vez de costumers_set.all()
+        related_name = "" --> O related_name é um parâmetro usado no Django, um framework de desenvolvimento web em Python, para definir um nome alternativo para o relacionamento reverso entre modelos.
+            Ele Substitui o "_set" de uma consulta de Um campo de classe. no nosso caso no models do app costumers:
+            Costumer.User.costumers.all()
+            em vez de costumers_set.all()
 
 
-!dica: Não se valida dados no Banco de dados, é na camada mais próxima do usuário!
+        !dica: Não se valida dados no Banco de dados, é na camada mais próxima do usuário!
+
+        --> Blank E Null TRUE por quê? O Blank e Null favorecem a praticidade do dia dia no sistema. Situacao exemplo: 
+            O dia dia corrido no estacionamento, o administrador não vai ficar pedindo CPF e outros campos se o cliente tiver atrasado, imagina criar um user do cliente no horário de pico.
+
+        --> Created at and update at são fundamentais para controle de auditoria.
+
