@@ -94,3 +94,6 @@ OBS EM AULA PARTE 1
 
         !Não se faz limpeza num DataBase, se normaliza na construcao dele...!
         
+        !É essencial ter a perspectiva do funcionamento do sistema, como um caso de uso, evitando possiveis falhas ou lentidões. Tal
+            exemplo seria no Cadastro de Veiculos, imagina se tivesse uma FK de um objeto Owner em dono. Seria necessário criar um owner para cadastras no sistema o carro.
+            Na prática isso afetaria e muito. Estacionamento é um ambiente "vapt vupt".

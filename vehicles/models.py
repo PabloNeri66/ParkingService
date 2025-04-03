@@ -17,6 +17,10 @@ class VehicleType(models.Model):
     def __str__(self):
         return self.name
     
+    class Meta:
+        verbose_name = 'Tipo de veículo'
+        verbose_name_plural = 'Tipos de veículos'
+    
 
 class Vehicle(models.Model):
     vehicle_type = models.ForeignKey(
@@ -66,3 +70,10 @@ class Vehicle(models.Model):
     updated_at = models.DateTimeField(
         auto_now=True, verbose_name='Atualizado em',
         )
+
+    class Meta:
+        verbose_name = 'Veículo'
+        verbose_name_plural = 'Veículos'
+
+    def __str__(self):
+        return self.license_plate # Stringar na interface.
