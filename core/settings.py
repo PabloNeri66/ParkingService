@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     #app
     'costumers',
     'vehicles',
+    'parking',
+    
     
 
 
