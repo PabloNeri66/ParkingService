@@ -48,10 +48,9 @@ class ParkingRecord(models.Model):
         verbose_name='Horário de entrada',
     )
     exit_time = models.DateTimeField(
-        auto_now_add=True,
         blank=True,
         null=True,
-        verbose_name = 'Horário de saída'
+        verbose_name = 'Horário de saída',
     )
     created_at = models.DateTimeField(
         auto_now_add=True,

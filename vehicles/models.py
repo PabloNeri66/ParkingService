@@ -75,5 +75,11 @@ class Vehicle(models.Model):
         verbose_name = 'Veículo'
         verbose_name_plural = 'Veículos'
 
+    def save(self, *args, **kwargs): #essa funcao permite deixar tudo em maiúsculo para a placa.
+        if self.license_plate:
+            self.license_plate = self.license_plate.upper()
+        super().save(*args, **kwargs)
+    
+    
     def __str__(self):
         return self.license_plate # Stringar na interface.
