@@ -1,5 +1,5 @@
 from django.db import models
-from costumers.models import Costumer
+from customers.models import Customer
 
 
 class VehicleType(models.Model):
@@ -57,7 +57,7 @@ class Vehicle(models.Model):
         verbose_name='Cor',
         )
     owner = models.ForeignKey(
-        Costumer,
+        Customer,
         on_delete=models.PROTECT,
         blank=True,
         null=True,
