@@ -114,5 +114,10 @@ Signals and apps:
 
         ----> instance = São os valores que estão sendo passados no evento(registro do uso da vaga que está sendo salvo na tabela)
 
-
+        ---> ParkingAdmin
+        '''
+        formfield: funcão responsável pela modificacao no admin django
+        db_field.name == 'parking_spot': é um verify se o campo tratado é o atual. (E se é uma FK)
+        request.resolver_match.url_name.endswith('change'): verifica se a URL atual termina com 'change', que normalmente indica que o usuário está acessando a página de edição de um objeto no admin.
+        '''
 __________________________________________________________________________________________________

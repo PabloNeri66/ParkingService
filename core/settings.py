@@ -129,6 +129,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIR =  [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -138,6 +140,35 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
     "show_ui_builder": True,  # Ativa o UI Builder para personalização visual
+
+    "copyright": "PabloNeri SA",
+
+
+    "site_title": "Parking Service",
+    "site_header": "Parking Service",
+    "site_brand": "Parking Service",
+
+    #"site_logo": "core/static/core/img/clone-solid.svg",
+
+    "welcome_sign": "Bem-vindo ao sistema Parking Service",
+
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+
+        #App Costumers
+        "customers.Customer": "fa-solid fa-id-card",
+        #App vehicles
+        "vehicles.VehicleType":"fa-solid fa-caravan",
+        "vehicles.Vehicle": "fa-solid fa-car",
+        #App parking
+        "parking.ParkingSpot": "fa-solid fa-square-parking",
+        "parking.ParkingRecord":"fa-solid fa-check",
+    },
 }
 
 JAZZMIN_UI_TWEAKS = {
@@ -165,10 +196,10 @@ JAZZMIN_UI_TWEAKS = {
     "button_classes": {
         "primary": "btn-primary",
         "secondary": "btn-secondary",
-        "info": "btn-info",
+        "info": "btn-outline-info",
         "warning": "btn-warning",
         "danger": "btn-danger",
-        "success": "btn-success"
+        "success": "btn-outline-success"
     },
     "actions_sticky_top": False
 }
