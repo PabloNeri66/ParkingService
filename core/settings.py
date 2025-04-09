@@ -128,8 +128,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIR =  [BASE_DIR / 'static']
+STATIC_URL = '/static/'
+STATICFILES_DIR = [BASE_DIR / 'static']
+
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
@@ -148,7 +149,10 @@ JAZZMIN_SETTINGS = {
     "site_header": "Parking Service",
     "site_brand": "Parking Service",
 
-    #"site_logo": "core/static/core/img/clone-solid.svg",
+    "site_logo": "/static/images/xs_logo.svg",
+
+    #"login_logo": "static/images/logo-disc",
+    #"site_icon": "static/images/logo-disc",
 
     "welcome_sign": "Bem-vindo ao sistema Parking Service",
 
