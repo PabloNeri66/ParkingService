@@ -144,7 +144,7 @@ Sobre o Django;
 __________________________________________________________________________________________________
     URLS
     - Default Router:
-        Não sei se usaremos neste projeto o Default Router, todavia vale lembrar que o router é fundamental para padronizar CRUDs na URL, já que evita que crie um path pra cada método...
+        Não sei se usaremos neste projeto o Default Router(momento em que escrevo isso), todavia vale lembrar que o router é fundamental para padronizar CRUDs na URL, já que evita que crie um path pra cada método...
 
 
 
