@@ -4,7 +4,9 @@
 ### Requisitos do projeto **Parking Service**:
 
 Sistema de gestão de estacionamento de veículos que deve atender os seguintes requisitos:
-<img src="https://github.com/user-attachments/assets/5c77599b-859a-41bd-8bb2-646b8674ea15" width="400" alt="Structure Django" />
+<a href="https://github.com/user-attachments/assets/5c77599b-859a-41bd-8bb2-646b8674ea15" target="_blank">
+  <img src="https://github.com/user-attachments/assets/5c77599b-859a-41bd-8bb2-646b8674ea15" width="400" alt="Structure Django" />
+</a>
 
 
 
