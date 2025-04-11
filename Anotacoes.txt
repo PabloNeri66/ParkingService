@@ -114,7 +114,7 @@ Signals and apps:
 
         ----> instance = São os valores que estão sendo passados no evento(registro do uso da vaga que está sendo salvo na tabela)
 
-        ---> ParkingAdmin
+        ----> ParkingAdmin
         '''
         formfield: funcão responsável pela modificacao no admin django
         db_field.name == 'parking_spot': é um verify se o campo tratado é o atual. (E se é uma FK)
@@ -143,7 +143,7 @@ Sobre o Django;
 
 __________________________________________________________________________________________________
     URLS
-    - Default Router:
+    ----> Default Router:
         Não sei se usaremos neste projeto o Default Router(momento em que escrevo isso), todavia vale lembrar que o router é fundamental para padronizar CRUDs na URL, já que evita que crie um path pra cada método...
 
 
