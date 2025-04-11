@@ -149,10 +149,10 @@ JAZZMIN_SETTINGS = {
     "site_header": "Parking Service",
     "site_brand": "Parking Service",
 
-    "site_logo": "/static/images/xs_logo.svg",
+    #"site_logo": "images/xs_logo.svg",
 
-    #"login_logo": "static/images/logo-disc",
-    #"site_icon": "static/images/logo-disc",
+    "login_logo": "images/lg_logo.svg",
+    "site_icon": "images/sm_logo.svg",
 
     "welcome_sign": "Bem-vindo ao sistema Parking Service",
 

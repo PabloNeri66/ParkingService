@@ -121,3 +121,31 @@ Signals and apps:
         request.resolver_match.url_name.endswith('change'): verifica se a URL atual termina com 'change', que normalmente indica que o usuário está acessando a página de edição de um objeto no admin.
         '''
 __________________________________________________________________________________________________
+
+
+
+
+
+
+Sobre o Django;
+    Django é um framework FullStack ( não é um front de nascência, mas corresponde a um sistema completo por si só.)
+    Você pode criar Um Banco De dados, Front e Back só pelo django.
+    Além disso, o Django é capaz de fazer API Rest utilizando Django (backend-JSON).
+    E é posssível integrar a API ao sistema no mesmo Projeto.
+
+
+    Explic básica Api Rest Ou Django Sistema:
+
+    O user entra na url pelo navegador, As urls do django direciona para VIEWS responsável pela rota(request), se necessário,
+    acessará o Django-Models que utiliza o ORM para comunicar com o banco de dados. O "models" executa um sql por baixo dos planos, retorna o response para views, a views renderiza  utilizando serializers em Json, ou Templates em HTML(django Template Language...). Também exibe um StatusCODE.
+
+    //Tem uma imagem no structure Django.
+
+__________________________________________________________________________________________________
+    URLS
+    - Default Router:
+        Não sei se usaremos neste projeto o Default Router, todavia vale lembrar que o router é fundamental para padronizar CRUDs na URL, já que evita que crie um path pra cada método...
+
+
+
+
