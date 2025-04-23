@@ -1,0 +1,1 @@
+from vehicles.models import Vehicle, VehicleType
