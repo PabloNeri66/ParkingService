@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'rest_framework',
+    'rest_framework_simplejwt'
     
     #app
     'customers',
@@ -206,4 +207,11 @@ JAZZMIN_UI_TWEAKS = {
         "success": "btn-outline-success"
     },
     "actions_sticky_top": False
+}
+
+# Django REST Framework
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
 }
